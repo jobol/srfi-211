@@ -547,6 +547,15 @@ href="http://mumble.net/~campbell/tmp/clinger91exrename.pdf">Hygienic
       define <code>lisp-transformer</code>.
     </p>
 
+    <p><i>Remark:</i> The syntax and procedures defined by the
+      library <code>(srfi 211 define-macro)</code> should be
+      considered deprecated.  Their use is only recommended by code
+      that needs to be compatible with Scheme implementations lacking
+      a working hygienic macro facility and for demonstration or
+      educational purposes.  Scheme implementations that have a
+      working hygienic macro facility are even encouraged not to ship
+      with this library by default.</p>
+
     <h2 id="implementation">Implementation</h2>
 
     <p>The implementation is necessarily distinct for every Scheme
